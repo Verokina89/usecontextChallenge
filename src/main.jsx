@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { Router } from 'react-router-dom';
 import App from './App.jsx'
 import './index.css'
-
 import { ThemeProvider } from './components/themes/ThemeContext';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -12,6 +12,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </ThemeProvider>
   </React.StrictMode>,
 )
-
-
-

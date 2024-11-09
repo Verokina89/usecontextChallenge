@@ -7,7 +7,9 @@ function RoutesApp() {
   return (
     <Router>
       <nav>
-        <Link to="/">Home</Link> | <Link to="/profile">Profile</Link> | <Link to="/myjob">MyJob</Link>
+        <Link to="/">Home</Link>
+        <Link to="/profile">Profile</Link>
+        <Link to="/myjob">MyJob</Link>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
