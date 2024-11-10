@@ -7,27 +7,10 @@ const App = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    
       <section className={`App ${theme}`} >
         <RoutesApp />
       </section>
-    
   );
 };
 
 export default App;
-
-
-
-
-// function App() {
-//   const { theme } = useContext(ThemeContext);
-
-//   return (
-//     <ThemeProvider>
-//       <section className={`App ${theme}`}>
-//         <RoutesApp />
-//       </section>
-//     </ThemeProvider>
-//   );
-// }

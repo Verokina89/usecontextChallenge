@@ -5,7 +5,6 @@ function Home() {
   return (
     <div>
       <h1>Esta es la página Home</h1>
-      <Button />
     </div>
   );
 }

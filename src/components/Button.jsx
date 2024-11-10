@@ -8,13 +8,3 @@ const Button = () => {
 };
 
 export default Button;
-
-
-
-// function Button() {
-//   const { toggleTheme } = useContext(ThemeContext);
-
-//   return (
-//     <button onClick={toggleTheme}>Cambiar Tema</button>
-//   );
-// }
