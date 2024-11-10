@@ -1,23 +1,23 @@
-import { createContext, useState } from 'react';
+import React, { createContext, useState } from 'react';
 
 // Crea el contexto
 export const ThemeContext = createContext();
 
 // Crea el proveedor del tema
-export function ThemeProvider({ children }) {
+export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState('light');
-  
-  //alternar entre temas
+
   const toggleTheme = () => {
+    console.log("Hago cliiiick!!!!");
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
-  
+
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
     </ThemeContext.Provider>
   );
-}
+};
 
 
 // // Crea el contexto
@@ -32,6 +32,23 @@ export function ThemeProvider({ children }) {
 //     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
 //   };
 
+//   return (
+//     <ThemeContext.Provider value={{ theme, toggleTheme }}>
+//       {children}
+//     </ThemeContext.Provider>
+//   );
+// }
+
+
+// // Crea el proveedor del tema
+// export function ThemeProvider({ children }) {
+//   const [theme, setTheme] = useState('light');
+  
+//   //alternar entre temas
+//   const toggleTheme = () => {
+//     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+//   };
+  
 //   return (
 //     <ThemeContext.Provider value={{ theme, toggleTheme }}>
 //       {children}

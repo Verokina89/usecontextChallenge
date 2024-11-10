@@ -7,11 +7,11 @@ const App = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <ThemeProvider>
-      <section className={`App ${theme}`}>
+    
+      <section className={`App ${theme}`} >
         <RoutesApp />
       </section>
-    </ThemeProvider>
+    
   );
 };
 
